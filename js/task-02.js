@@ -6,3 +6,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const listIngredients = ingredients.map(ingredient => {
+  const listIngredient = document.createElement('li');
+  listIngredient.classList.add('item');
+  listIngredient.textContent = ingredient;
+ return listIngredient;
+})
+const ulIngredients = document.createElement('ul');
+ulIngredients.append(...listIngredients);
