@@ -12,3 +12,17 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+function createCards() {
+  const ul = document.querySelector('ul');
+  const cards = images.map(
+    (
+      item
+    ) => `<li class="li-item">
+    <img class="img-item" src=${item.url}/>
+    <p>${item.alt}</p>
+    </li>`
+  ).join('');
+  ul.insertAdjacentHTML("afterbegin", cards);
+} 
+createCards();
+

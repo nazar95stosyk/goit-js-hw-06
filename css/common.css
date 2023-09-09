@@ -22,3 +22,16 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+.li-item{
+  cursor: pointer;
+}
+.img-item{
+  max-width: 480px;
+  height: 360px;
+}
